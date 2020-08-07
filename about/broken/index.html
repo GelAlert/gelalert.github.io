@@ -1,0 +1,195 @@
+
+<head>
+<meta name="google-site-verification" content="t_vBBlqTifPI5wgFiRfPNAca9v-V8aMAjkayzvwjbks" />
+<title> P3tray.TK </title>
+<style>
+* {
+  font-family: Arial;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.body {
+  background-color: black;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.products {
+  position: fixed;
+  top: 20px;
+  left: 20%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 20px;
+  width: 20%;
+  padding: 0px;
+}
+
+.about {
+  position: fixed;
+  top: 20px;
+  left: 40%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 20px;
+  width: 20%;
+  padding: 0px;
+}
+
+.contact {
+  position: fixed;
+  top: 20px;
+  left: 60%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 20px;
+  width: 20%;
+  padding: 0px;
+}
+
+.content {
+  position: fixed;
+  top: 40%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+
+.smaller-text {
+  font-size: 15px;
+}
+
+.content-P3trayOS {
+  position: fixed;
+  top: 75%;
+  left: 25%;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 50%;
+  padding: 0px;
+}
+
+.downToP3trayOS {
+  position: fixed;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  top: 70%;
+  left: 45%;
+  width: 10%;
+  cursor: pointer;
+}
+
+.downToP3trayOS:hover {
+  background-color: RoyalBlue;
+}
+  
+.downButton {
+  width: 50px;
+  height: 50px;
+}
+
+.copyright {
+  position: fixed;
+  top: 200%;
+  left: 0%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 20px;
+  width: 100%;
+  padding: 0px;
+}
+
+</style>
+</head>
+<body class="body">
+<video autoplay muted loop id="myVideo">
+  <source src="lines.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div>
+  <div class="products">
+    <a href=products> Products <a>
+  </div>
+  <div class="about">
+    <a href=about> About <a>
+  </div>
+  <div class="contact">
+    <a href=about> Contact <a>
+  </div>
+</div>
+<div class="content">
+  <h1> Welcome to the products page! </h1>
+  <p> Here you will find the developments and projects of P3tray and P3tray.ORG. </p>
+  <p class="smaller-text"> Feel free to browse away... </p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button class="pauseBackground" onclick="backgroundPause()">Pause</button>
+  <button class="downToP3trayOS"><img src="downButton.jpg" class="downButton"></i></button>
+</div>
+
+<div class="content-P3trayOS">
+  <h1> P3tray.OS </h1>
+  <p1> P3tray.OS is a small linux distribution built straight off the kernel with a fancy keyboard based GUI built in Python. </p1>
+</div>
+
+<div class="copyright">
+  <p1> 2019 P3tray (CC0), All Rights Reserved. </p1>
+</div>
+</body>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
