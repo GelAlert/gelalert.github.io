@@ -1,0 +1,192 @@
+<head>
+<meta name="google-site-verification" content="t_vBBlqTifPI5wgFiRfPNAca9v-V8aMAjkayzvwjbks" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<title> P3tray.TK </title>
+<style>
+* {
+  font-family: Arial;
+  text-align: center;
+  color: #f1f1f1;
+}
+.body {
+  background-color: black;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  color: #000;
+  cursor: pointer;
+}
+#myBtn:hover {
+  background: #111;
+  color: #fff;
+}
+
+#welcome {
+  position:absolute;
+  top:200px;
+  left:0px;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 200%;
+  width: 100%;
+  padding: 0px;
+  }
+  
+#content {
+  position:absolute;
+  top:350px;
+  left:0px;
+  background: rgba(0, 0, 0, 0);
+  font-size: 150%
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+  }
+  
+.products {
+  position: fixed;
+  top: 20px;
+  left: 20%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 150%;
+  width: 20%;
+  padding: 0px;
+}
+.about {
+  position: fixed;
+  top: 20px;
+  left: 40%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 150%;
+  width: 20%;
+  padding: 0px;
+}
+.contact {
+  position: fixed;
+  top: 20px;
+  left: 60%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 150%;
+  width: 20%;
+  padding: 0px;
+}
+.welcome {
+  position: relative;
+  top: 30%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 200%;
+  width: 100%;
+  padding: 0px;
+}
+.content {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0);
+  font-size: 150%
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 20px;
+  left: 0%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 75%;
+  width: 100%;
+  padding: 0px;
+}
+</style>
+</head>
+<body class="body">
+<video autoplay muted loop id="myVideo">
+  <source src="lines.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div>
+  <div class="products">
+    <a href=products> Products <a>
+  </div>
+  <div class="about">
+    <a href=about> About <a>
+  </div>
+  <div class="contact">
+    <a href=about> Contact <a>
+  </div>
+</div>
+<div id="welcome">
+  <h1> Welcome to P3tray.TK </h1>
+</div>
+<div id="content">
+  <p> The website of P3tray and P3tray.ORG. Build 0.4. </p>
+
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<div class="copyright">
+  <p1> 2019 P3tray (CC0), All Rights Reserved. </p1>
+</div>
+</body>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+// Get the button
+var btn = document.getElementById("myBtn");
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var canvasHeight = $(window).height();
+var duration = 5000;
+
+function welcomebannerMoveDown(){
+    $("#welcome").animate({top:150}, duration, 'swing', welcomebannerMoveUp);
+}
+function welcomebannerMoveUp(){
+    $("#welcome").animate({top:250}, duration, 'swing', welcomebannerMoveDown);
+}
+welcomebannerMoveDown();
+</script>
+<script>
+var canvasHeight = $(window).height();
+var duration = 5000;
+
+function contentbannerMoveDown(){
+    $("#content").animate({top:300}, duration, 'swing', contentbannerMoveUp);
+}
+function contentbannerMoveUp(){
+    $("#content").animate({top:400}, duration, 'swing', contentbannerMoveDown);
+}
+contentbannerMoveDown();
+</script>

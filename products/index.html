@@ -1,0 +1,274 @@
+<head>
+<meta name="google-site-verification" content="t_vBBlqTifPI5wgFiRfPNAca9v-V8aMAjkayzvwjbks" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<title> P3tray.TK | Products</title>
+<style>
+* {
+  font-family: Arial;
+  text-align: center;
+  color: #f1f1f1;
+}
+.body {
+  background-color: black;
+}
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+#pauseButton {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  color: #000;
+  cursor: pointer;
+}
+
+#pauseButton:hover {
+  background: #111;
+  color: #fff;
+}
+
+.products {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 150%;
+  width: 20%;
+  padding: 0px;
+}
+.about {
+  position: absolute;
+  top: 20px;
+  left: 40%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 150%;
+  width: 20%;
+  padding: 0px;
+}
+.contact {
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 150%;
+  width: 20%;
+  padding: 0px;
+}
+  
+#welcome {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 200%;
+  width: 100%;
+  padding: 0px;
+}
+  
+#content {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0);
+  font-size: 150%
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+.e-spam {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+}
+  
+.P3trayOS{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background: rgba(41, 171, 226, 0);
+  color: #f1f1f1;
+  width: 100%;
+  height: 90%;
+  padding: 0px;
+  
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-top-style: solid;
+  border-right-style: hidden;
+  border-bottom-style: solid;
+  border-left-style: hidden;
+  }
+
+.welcome-P3trayOS {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  background: rgba(41, 171, 226, 0);
+  color: #f1f1f1;
+  font-size: 50px;
+  width: 60%;
+  height: 20%;
+  padding: 0px;
+  
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-top-style: hidden;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
+  
+.welcome-P3trayOS-text {
+  position: relative;
+  top: -55px;
+  padding: 0px;
+}
+.content-P3trayOS {
+  position: absolute;
+  top: 140px;
+  left: 20%;
+  background: rgba(41, 171, 226, 0);
+  font-size: 20px;
+  color: #f1f1f1;
+  width: 60%;
+  height: calc(100% - 140px);
+  padding: 0px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-top-style: hidden;
+  border-right-style: solid;
+  border-bottom-style: hidden;
+  border-left-style: solid;
+}
+
+.content-P3trayOS-text {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  background: rgba(41, 171, 226, 0);
+  font-size: 20px;
+  color: #f1f1f1;
+  padding: 0px;
+}
+
+.nothingHere {
+  position: absolute;
+  top: 6200px;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  left: 30%;
+}
+.copyright {
+  position: absolute;
+  top: 61500px;
+  left: 0%;
+  background: rbga(0, 0, 0, 0);
+  color: #f1f1f1;
+  font-size: 75%;
+  width: 100%;
+  padding: 0px;
+}
+
+</style>
+</head>
+<body class="body">
+
+<video autoplay muted loop id="backgroundVideo">
+<source src="lines.mp4" type="video/mp4">
+</video>
+
+<div>
+  <div class="products">
+    <a href="../products"> Products </a>
+  </div>
+  <div class="about">
+    <a href="../about"> About </a>
+  </div>
+  <div class="contact">
+    <a href="../contact"> Contact </a>
+  </div>
+</div>
+<div id="welcome">
+  <h1> Welcome to the Products Page! </h1>
+</div>
+<div id="content">
+  <p> Feel free to scoll away... Do note this is currently unfinished though.</p>
+
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="pauseButton" onclick="pauseButton()">Pause</button>
+</div>
+
+<div class="P3trayOS">
+  <div class="welcome-P3trayOS">
+    <h1 class="welcome-P3trayOS-text"> P3tray.OS </h1>
+  </div>
+  <div class="content-P3trayOS">
+    <p1 class="content-P3trayOS-text"> P3tray.OS is a Windowing Enviornment (Eventually its own fully-fledged Linux Distribution!) on Debian based to work around the functionality of only the keyboard. This makes using programs and browsing the internet significantly faster if you hate having to reach for your mouse, and especially if you get board of the blinking white cursor at the terminal. It infuses the terminal functionality and gives it a pleasing graphical output, best of both worlds! <br> <br> Please note that P3tray.OS is undergoing a second re-write due to its code having major performace updates as well as increasing its maintainability in the long run. The main reason for this is my significant improvments in the Python 3 programming language over the years. Its current and previous alpha and beta distributions source code is currently unavailable. Pre-Alpha distributions are available on Repl.it. </p1>
+  </div>
+</div>
+
+<div class="nothingHere">
+  <img src="NothingHere.jfif">
+</div>
+
+<div class="copyright">
+  <p1> 2019 P3tray (CC0), All Rights Reserved. Build 0.2</p1>
+</div>
+
+</body>
+<script>
+// Get the video
+var video = document.getElementById("backgroundVideo");
+// Get the button
+var btn = document.getElementById("pauseButton");
+// Pause and play the video, and change the button text
+function pauseButton() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<script>
+var canvasHeight = $(window).height();
+var duration = 5000;
+
+function welcomebannerMoveDown(){
+    $("#welcome").animate({top:150}, duration, 'swing', welcomebannerMoveUp);
+}
+function welcomebannerMoveUp(){
+    $("#welcome").animate({top:250}, duration, 'swing', welcomebannerMoveDown);
+}
+welcomebannerMoveDown();
+</script>
+<script>
+var canvasHeight = $(window).height();
+var duration = 5000;
+
+function contentbannerMoveDown(){
+    $("#content").animate({top:300}, duration, 'swing', contentbannerMoveUp);
+}
+function contentbannerMoveUp(){
+    $("#content").animate({top:400}, duration, 'swing', contentbannerMoveDown);
+}
+contentbannerMoveDown();
+</script>
